@@ -1,0 +1,42 @@
+<app-products></app-products>
+<!-- <app-accuiel></app-accuiel>
+<boutique></boutique> -->
+
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#accueil" style="margin-top: 10px; padding-top: 10px;"><img src="../../../assets/img/Logo-Studio-Mobile.png" alt="Logo" style="max-height:50px"></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="#!/accueil#information" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> Information</a>
+        <a routerLink="/products" class="w3-bar-item w3-button"><i class="fa fa-camera"></i> Produits</a>
+        <a href="#" data-toggle="modal" data-target="#modal-boutique" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> Boutique</a>
+        <a href="https://studiomobile.quebec/#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contacter-nous</a>
+        
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fermer ×</a>
+    <a href="#!/accueil#information" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> Information</a>
+    <a routerLink="/products" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-camera"></i> Produits</a>
+    <a href="#" data-toggle="modal" data-target="#modal-boutique" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> Boutique</a>
+    <a href="https://studiomobile.quebec/#contact" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contacter-nous</a>
+  </nav>
+
+  <footer class="w3-center w3-black w3-padding-64">
+    <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Retour à l'accueil</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.facebook.com/studiomobile.quebec"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+      <a href="https://studiomobile.quebec"><i class="fa fa-home w3-hover-opacity"></i></a>
+    </div>
+    <strong>Copyright &copy; 2022-2023 <a href="https://Studiomobile.quebec" target="_blank">Le Studio Mobile</a>.</strong> Tout droits réservé.
+    <br>
+    <small>Version <?=$version?></small>
+  </footer>
+  

@@ -1,0 +1,183 @@
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+    <h3>Disponible au kiosque</h3>
+    <p class="w3-large">Voici la tarification pour les produits disponible lors de votre visite au kiosque.</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Photo 5x7</li>
+          <li class="w3-padding-16">La première impression d'une photo</li>
+          <li class="w3-padding-16">Impression 5x7 en moins d'une minute</li>
+          <li class="w3-padding-16">Photo remise dans une carte</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">12$ </h2>
+            <span class="w3-opacity">taxes incluses</span>
+          </li>
+        </ul>
+      </div>
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Photo 5x7 supplémentaire</li>
+          <li class="w3-padding-16">Impression supplémentaire d'une même photo</li>
+          <li class="w3-padding-16">Impression 5x7 en moins d'une minute</li>
+          <li class="w3-padding-16">Photo remise dans une carte</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">10$ </h2>
+            <span class="w3-opacity">taxes incluses</span>
+          </li>
+        </ul>
+      </div>
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Photo par courriel</li>
+          <li class="w3-padding-16">AUCUNE IMPRESSION</li>
+          <li class="w3-padding-16">Jusqu'à 5 photos</li>
+          <li class="w3-padding-16">Photos envoyées par courriel et disponibles sur un site web pour téléchargement pendant 30 jours</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">25$ </h2>
+            <span class="w3-opacity">taxes incluses</span>
+        </ul>
+      </div>
+    </div>
+  </div>
+      
+  
+  <!-- Section Tarif -->
+  <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+    <h3 class="w3-center">Disponible sur Internet</h3>
+    <p class="w3-center w3-large">Voici la tarification pour les produits disponible sur le site internet polenord.quebec .</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-half w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Photo Numérique</li>
+          <li class="w3-padding-16">Tout comme en personne au kiosque, nous vous proposons d'acheter jusqu'à 5 photos numérique</li>
+          <li class="w3-padding-16">Une fois l'achat terminer vous obtiendrez une nouvelle facture par courriel avec un lien pour télécharger la ou les photos sans filigrane.</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">25$<br>Promotion APRÈS-NOËL  12,50$ </h2>
+            <span class="w3-opacity">taxes incluses</span>
+          </li>
+        </ul>
+      </div>
+      <div class="w3-half w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Ornement rouge</li>
+          <li class="w3-padding-16">Ornement en métal rouge avec votre photo imprimé des deux côté, un souvenir de votre visite au Père Noël à garder de le sapin pour plusieurs années.</li>
+          <li class="w3-padding-16">Délais de production d'environ une semaine</li>
+          <li class="w3-padding-16">Nous vous contacterons par courriel quand il sera temps de récupéré l'objet chez notre partenaire ouvert 7 jours au Promenades Drummondville</li>
+          <li class="w3-padding-16"><img src="./../../../assets/img/ornement.jpg" style="max-width:100%;"></li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">25$ </h2>
+            <span class="w3-opacity">taxes incluses</span>
+          </li>
+        </ul>
+      </div>
+  </div>
+  </div>
+  
+  
+      <!-- Section des photos -->
+      <!-- <div class="w3-container w3-light-grey" style="padding:128px 16px">
+          <div class="w3-row-padding">
+              <div class="w3-col m6" ng-repeat="photo in photos">
+                  <h3>Photo : {{ photo.uuid }}</h3>
+                  <div class="btn-group">
+                      <button type="button" class="btn btn-secondary" ng-click="selectphoto(photo); addCartEmail();"></i>Achat numérique</button>
+                      <button type="button" class="btn btn-secondary" ng-click="selectphoto(photo); addCart('physique-orn-rouge');"></i>Ornement de Noël</button>
+                  </div>
+                  <div style="width:500px;height:700px;background-image: url('/img/loading.png');">
+                      <img src="{{ photo.img_url }}" style="max-width:100%;max-height:750px;" class="lazyload">
+                  </div>
+                  
+              </div>
+          </div>
+      </div> -->
+  
+      <!-- Modal du panier d'achat-->
+      <!-- <div class="modal fade" id="modal-panier-achats" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Panier d'achats ( {{ cart.length || '0' }} )</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+                  <div class="modal-body">
+                      <table class="table" style="margin-top:5px;">
+                          <thead>
+                              <tr>
+                                  <th class="text-center">Description / Item<br>Miniature</th>
+                                  <th class="text-center">Prix ( Tx Inc )</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr data-ng-repeat="line in cart">
+                                  <td><b>{{ line.description }}</b><br><small>{{ line.item }} | {{ line.uuid }}</small><br><img src="{{ line.img_url }}" style="max-width:150px;max-height:750px;"></td>
+                                  <td class="text-center">{{ line.priceTxInc }} $<button class="btn btn-danger float-end" ng-click="removeCart($index,line)"><span class="fa fa-trash-alt"></span></button></td>
+                              </tr>
+                              <tr>
+                                  <td class="text-right"><b>TPS 826476517 RT0002 (5.000%) :</b></td>
+                                  <td class="text-center">{{ getTPS() }} $</td>
+                              </tr>
+                              <tr>
+                                  <td class="text-right"><b>TVQ 1204173725 TQ0001 (9.975%) :</b></td>
+                                  <td class="text-center">{{ getTVQ() }} $</td>
+                              </tr>
+                              <tr>
+                                  <td class="text-right"><b>Total :</b></td>
+                                  <td class="text-center">{{ getTotal() }} $</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+            <div class="modal-footer">
+                <div class="float-end btn-group">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                  <button class="clear-cart btn btn-danger" ng-click="cart.length = 0;" data-widget="control-sidebar" data-slide="false"><i class="fa fa-recycle"></i> Vider le panier</button>
+                  <button class="btn btn-success" data-toggle="modal" data-target="#modal-info-facturation" data-dismiss="modal"><i class="fa fa-credit-card"></i> Commander</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+  
+      <!-- Modal d'info de facturation -->
+      <!-- <div class="modal fade" id="modal-info-facturation" tabindex="-1" role="dialog" aria-labelledby="modal-info-facturation" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Information facturation</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h2>Contact</h2>
+              <p>Il est nécessaire d'avoir votre adresse courriel pour vous envoyer le lien pour récupérer les photos numériques ainsi que la facture de la transaction et faire un suivi de la commande avec vous.</p>
+              <div class="form-group">
+                  <label>Courriel :</label>
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                      </div>
+                  <input type="email" class="form-control" placeholder="utilisateur@domaine" ng-model="email">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label>Numéro de cellulaire :</label>
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                      </div>
+                  <input pattern="[0-9]*" type="text" class="form-control" ng-model="sms" placeholder="0000000000">
+                  </div>
+              </div>
+          
+          
+            </div>
+            <div class="modal-footer btn-group">
+              <button id="close" type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+              <button class="btn btn-success" ng-click="facturer();" ng-disabled="email==NULL"><i class="fa fa-credit-card-alt"></i> Payer</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
