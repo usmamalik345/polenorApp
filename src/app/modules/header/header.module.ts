@@ -6,22 +6,19 @@ import { ProductsComponent } from '../products/products.component';
 import { AccueilComponent } from '../accueil/accueil.component';
 import { BoutiqueComponent } from '../boutique/boutique.component';
 import { HeaderComponent } from './header.component';
+import {AppModule} from "../../app.module";
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    ProductsComponent,
-    AccueilComponent,
-    BoutiqueComponent,
   ],
-  imports: [
-    CommonModule,
-    HeaderRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        HeaderRoutingModule,
+    ],
   exports: [
     HeaderComponent ,
-    AccueilComponent// Export if it needs to be used in other modules
   ]
 })
 export class HeaderModule { }
