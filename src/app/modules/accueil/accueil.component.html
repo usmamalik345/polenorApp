@@ -1,1 +1,127 @@
-<p>accueil works!</p>
+
+
+<div ng-controller="AccueilController" ng-init="fetch()">
+
+    <!-- Header with full-height image -->
+    <div class="bgimg-1 w3-display-container" id="accueil">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+      <div class="w3-display-left w3-text-white" style="padding:48px">
+        <span class="w3-jumbo w3-hide-small">Photos Souvenirs Pôle Nord</span><br>
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Photos Souvenirs Pôle Nord</span><br>
+        <span class="w3-large">Venez visiter le Père Noël aux Promenades Drummondville entre le 18 novembre et le 24 décembre</span>
+        <p><a ng-click="rendezvous();" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Prendre rendez-vous</a></p>
+      </div> 
+      <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+        <a href="https://www.facebook.com/studiomobile.quebec"><i class="fa fas-facebook w3-hover-opacity"></i></a>
+        <a href="https://studiomobile.quebec"><i class="fa fa-home w3-hover-opacity"></i></a>
+      </div>
+    </div>
+    
+    
+    
+    <!-- Section Information -->
+    <div class="w3-container" style="padding:128px 16px" id="information">
+      <h3 class="w3-center">Déroulement de l'expérience</h3>
+      <p class="w3-center w3-large"></p>
+      <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <div class="w3-quarter">
+          <i class="fa fa-calendar-check w3-margin-bottom w3-jumbo"></i>
+          <p class="w3-large">Prendre rendez-vous</p>
+          <p>Prenez rendez-vous sur la <a href="https://promenadesdrummondville.perenoelrdv.com/"> plateforme de rendez-vous des Promenades Drummondville </a></p>
+        </div>
+        <div class="w3-quarter">
+          <i class="fa fa-candy-cane w3-margin-bottom w3-jumbo w3-center"></i>
+          <p class="w3-large">Visiter le village de Noël</p>
+          <p>Visiter le village de Père et Mère Noël aux Promenades Drummondville, vos enfants pourront échanger avec eux et ils recevront un cadeau.</p>
+        </div>
+        <div class="w3-quarter">
+          <i class="fa fa-camera w3-margin-bottom w3-jumbo"></i>
+          <p class="w3-large">Prise de photos</p>
+          <p><a href="https://studiomobile.quebec">Le Studio Mobile</a> prendra quelques photos de votre visite que vous pourrez acheter directement sur place en format 5x7 ou en numérique.</p>
+        </div>
+        
+        <div class="w3-quarter">
+          <i class="fa fa-shopping-cart w3-margin-bottom w3-jumbo"></i>
+          <p class="w3-large">Boutique</p>
+          <p>Accéder à votre boutique personnalisée grâce au code sur le reçu qui vous sera remis pour acheter d'autre produit avec les photos prises lors de votre visite.</p>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <!-- Section Tarif -->
+    <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+      <h3>Tarification</h3>
+      <p class="w3-large">La visite du Père Noël est gratuite, seule la prise de photo est payante.</p>
+      <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-third w3-section">
+          <ul class="w3-ul w3-white w3-hover-shadow">
+            <li class="w3-black w3-xlarge w3-padding-32">Photo 5x7</li>
+            <li class="w3-padding-16">La première impression d'une photo</li>
+            <li class="w3-padding-16">Impression 5x7 en moins d'une minute</li>
+            <li class="w3-padding-16">Photo remise dans une carte</li>
+            <li class="w3-padding-16">
+              <h2 class="w3-wide">12$ </h2>
+              <span class="w3-opacity">taxes incluses</span>
+            </li>
+          </ul>
+        </div>
+        <div class="w3-third w3-section">
+          <ul class="w3-ul w3-white w3-hover-shadow">
+            <li class="w3-black w3-xlarge w3-padding-32">Photo 5x7 supplémentaire</li>
+            <li class="w3-padding-16">Impression supplémentaire d'une même photo</li>
+            <li class="w3-padding-16">Impression 5x7 en moins d'une minute</li>
+            <li class="w3-padding-16">Photo remise dans une carte</li>
+            <li class="w3-padding-16">
+              <h2 class="w3-wide">10$ </h2>
+              <span class="w3-opacity">taxes incluses</span>
+            </li>
+          </ul>
+        </div>
+        <div class="w3-third w3-section">
+          <ul class="w3-ul w3-white w3-hover-shadow">
+            <li class="w3-black w3-xlarge w3-padding-32">Photo par courriel</li>
+            <li class="w3-padding-16">AUCUNE IMPRESSION</li>
+            <li class="w3-padding-16">Jusqu'à 5 photos</li>
+            <li class="w3-padding-16">Photos envoyées par courriel et disponibles sur un site web pour téléchargement pendant 30 jours</li>
+            <li class="w3-padding-16">
+              <h2 class="w3-wide">25$ </h2>
+              <span class="w3-opacity">taxes incluses</span>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    </div>
+    

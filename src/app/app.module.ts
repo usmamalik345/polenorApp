@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './modules/header/header.module';
 import {FooterModule} from "./modules/footer/footer.module";
+import { ProductShopComponent } from './modules/product-shop/product-shop.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import {FooterModule} from "./modules/footer/footer.module";
     BrowserModule,
     AppRoutingModule,
     HeaderModule,
-    FooterModule
+    FooterModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
