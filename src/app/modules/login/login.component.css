@@ -1,0 +1,97 @@
+/* .santa-banner {
+    position: relative;
+    min-height: 200px;
+    margin-bottom: 1.5rem;
+    background-image: url('src\assets\img\pn-fond-rouge.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+} */
+
+.santa-banner {
+    position: relative;
+    min-height: 200px;
+    margin-bottom: 1.5rem;
+} 
+
+.santa-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    background-image: url('src\assets\img\pn-fond-rouge.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 0; /* Lower than the content but higher than the base layer */
+}
+
+/* .santa-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    background-image: url('src\assets\img\pn-fond-rouge.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: -1;
+} */
+
+.container {
+    height: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row {
+    width: 100%; /* Ensure full width */
+  }
+  
+  .form-size {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure form takes full width of its container */
+  }
+  
+  .form-control, .btn-custom {
+    border-radius: 25px;
+    width: 124%;
+    border: 2px dashed #ED1B2F;
+    margin-bottom: 2px;
+    margin-bottom: 8px;
+
+  }
+  
+  .btn-custom {
+    background-color: #ED1B2F;
+    color: white;
+    width: 281px;
+    margin-top: 13px;
+    margin-left: 52px;
+    padding: 14px;
+  }
+
+  .site-footer {
+    background-color: #91171A;
+    color: var(--second-color);
+    padding: 1.6666666667rem;
+    margin-top: 1.5rem;
+  }
+  
+  .container {
+    width: 100%; /* Ensures the container inside the footer matches the width of the page */
+  }
