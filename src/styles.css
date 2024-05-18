@@ -334,9 +334,9 @@
     top: 0.2rem;
     left: 2rem;
   }
-  body, .card-body {
+  /* body, .card-body {
     padding: 20px;
-  }
+  } */
   .container {
     padding-top: 20px;
   }
