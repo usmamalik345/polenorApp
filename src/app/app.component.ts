@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'polenordapp';
+  showHeader = true;
+
+  constructor(private router: Router) {
+    this.router.events.forEach((event) => {
+      if (event instanceof NavigationEnd) {
+        this.updateHeaderVisibility(event.urlAfterRedirects);
+      }
+    });
+  }
+
+  updateHeaderVisibility(url: string) {
+    this.showHeader = !url.includes('/login') && !url.includes('/registration');
+  }
+  
 }

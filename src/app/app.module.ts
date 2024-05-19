@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './modules/header/header.module';
 import {FooterModule} from "./modules/footer/footer.module";
 import { ProductShopComponent } from './modules/product-shop/product-shop.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,8 @@ import { ProductShopComponent } from './modules/product-shop/product-shop.compon
     AppRoutingModule,
     HeaderModule,
     FooterModule, 
+    HttpClientModule // Add HttpClientModule to imports array
+
   ],
   providers: [],
   bootstrap: [AppComponent]
